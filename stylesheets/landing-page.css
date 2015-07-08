@@ -9,12 +9,12 @@
       width: 100%; } }
   @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1080px) {
     #myCanvas {
-      top: 50%; } }
+      top: 30%; } }
 
 #section0 {
   display: block;
   background: #772953;
-  height: 600px; }
+  height: 100vh; }
   @media only screen and (max-width: 600em) {
     #section0 {
       height: 100vh; } }
@@ -41,12 +41,21 @@
     height: 100px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1080px) {
     #content {
-      top: 10%;
+      top: 0%;
       font-size: 4em; }
       #content > h1 {
         margin-bottom: 4%; }
       #content > img {
         height: 200px; } }
+  @media only screen and (min-width: 321px) and (max-width: 1080px) {
+    #content {
+      font-size: 2em; }
+      #content > img {
+        height: 150px; }
+      #content > h3 {
+        background-color: #772953;
+        margin: 2% auto;
+        width: 80%; } }
 
 #skills-section {
   margin: 0% 10%;
@@ -68,10 +77,6 @@
 #portfolio-section {
   font-size: 1.5em; }
   @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1080px) {
-    #portfolio-section {
-      font-size: 2em;
-      line-height: 200%; } }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
     #portfolio-section {
       font-size: 2em;
       line-height: 200%; } }

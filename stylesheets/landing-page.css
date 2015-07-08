@@ -33,7 +33,6 @@
   background-color: transparent;
   width: 100%; }
   #content > h1 {
-    font-size: 50px;
     padding-top: 5%;
     z-index: 2;
     margin: 0 0; }
@@ -42,8 +41,12 @@
     height: 100px; }
   @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1080px) {
     #content {
-      top: 20%;
-      font-size: 2em; } }
+      top: 10%;
+      font-size: 4em; }
+      #content > h1 {
+        margin-bottom: 4%; }
+      #content > img {
+        height: 200px; } }
 
 #skills-section {
   margin: 0% 10%;
@@ -136,7 +139,7 @@
       list-style: none;
       text-align: center;
       padding: 0% 2%;
-      font-size: 36px; }
+      font-size: 2.5em; }
       .main > ul > li > a {
         color: white;
         text-decoration: none; }

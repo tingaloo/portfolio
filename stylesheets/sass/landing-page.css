@@ -1,0 +1,191 @@
+/* line 1, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+#myCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 100%; }
+  @media only screen and (min-width: 650px) {
+    /* line 1, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+    #myCanvas {
+      width: 100%; } }
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1080px) {
+    /* line 1, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+    #myCanvas {
+      top: 50%; } }
+
+/* line 23, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+#section0 {
+  display: block;
+  background: #772953;
+  height: 600px; }
+  @media only screen and (max-width: 600em) {
+    /* line 23, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+    #section0 {
+      height: 100vh; } }
+
+/* line 36, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+#section1 {
+  margin: 10% 0%; }
+
+/* line 40, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+#section2 {
+  display: block;
+  height: 600px; }
+
+/* line 45, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+#content {
+  position: absolute;
+  color: white;
+  margin: 0% 0%;
+  background-color: transparent;
+  width: 100%; }
+  /* line 54, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+  #content > h1 {
+    font-size: 50px;
+    padding-top: 5%;
+    z-index: 2;
+    margin: 0 0; }
+  /* line 61, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+  #content > img {
+    border-radius: 25%;
+    height: 100px; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1080px) {
+    /* line 45, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+    #content {
+      top: 20%;
+      font-size: 2em; } }
+
+/* line 76, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+#skills-section {
+  margin: 0% 10%;
+  padding-top: 2%;
+  font-size: 1.5em;
+  line-height: 200%; }
+  /* line 81, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+  #skills-section > h1 {
+    border-bottom: solid 2px;
+    padding: 2% 2%; }
+  /* line 86, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+  #skills-section > .highlight {
+    background-color: #772953;
+    color: white;
+    padding: 2% 2%; }
+  /* line 93, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+  #skills-section > p > .highlight {
+    background-color: #772953;
+    color: white;
+    padding: 0% 2%; }
+
+/* line 101, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+#portfolio-section {
+  font-size: 1.5em; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1080px) {
+    /* line 101, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+    #portfolio-section {
+      font-size: 2em;
+      line-height: 200%; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    /* line 101, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+    #portfolio-section {
+      font-size: 2em;
+      line-height: 200%; } }
+  /* line 118, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+  #portfolio-section > .portfolio-title {
+    padding: 2% 0%;
+    width: 60%;
+    margin: 5% auto;
+    font-size: 2em;
+    border-bottom: solid 2px; }
+
+/* line 127, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+.portfolio-row {
+  margin: 5% 5%;
+  width: auto;
+  max-width: none;
+  text-align: left; }
+
+/* line 134, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+.portfolio-pic {
+  height: 200px;
+  width: 30%;
+  display: inline-block; }
+  /* line 138, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+  .portfolio-pic > img {
+    width: 300px; }
+
+/* line 144, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+.portfolio-pic-mobile {
+  display: inline-block;
+  width: 30%;
+  text-align: center; }
+  /* line 148, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+  .portfolio-pic-mobile > img {
+    width: 150px;
+    height: 275px; }
+
+/* line 154, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+.portfolio-description {
+  display: inline-block;
+  width: 100%; }
+  /* line 158, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+  .portfolio-description > p {
+    display: inline-block;
+    padding: 2% 10%;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(224, 90, 43, 0.8);
+    color: white; }
+    /* line 165, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+    .portfolio-description > p > a {
+      color: black; }
+
+/* line 174, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+.main {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 70%;
+  text-align: center;
+  z-index: 2; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1080px) {
+    /* line 174, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+    .main {
+      top: 80%; } }
+  /* line 186, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+  .main > ul {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-bottom: solid 2px;
+    padding: 2% 0%; }
+    /* line 198, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+    .main > ul > li {
+      display: inline;
+      color: white;
+      list-style: none;
+      text-align: center;
+      padding: 0% 2%;
+      font-size: 36px; }
+      /* line 206, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+      .main > ul > li > a {
+        color: white;
+        text-decoration: none; }
+  /* line 214, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+  .main > #contact-info {
+    display: none;
+    color: white;
+    border-bottom: none; }
+
+/* line 223, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+#buttons {
+  position: absolute;
+  top: 5px;
+  left: 10px; }
+
+/* line 228, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/landing-page.scss */
+#buttons > input {
+  padding: 10px;
+  display: block;
+  margin-top: 5px; }

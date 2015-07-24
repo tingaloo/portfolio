@@ -152,7 +152,7 @@ h1, h2, h3, p, a, li {
     font-family: 'Ubuntu', sans-serif; }
 
 .project-header {
-  font-size: 1.5em;
+  font-size: 2em;
   padding-top: 3%;
   width: 60%;
   margin: 5% auto;
@@ -216,9 +216,9 @@ h1, h2, h3, p, a, li {
   #about-section > .about-title {
     padding: 2%;
     padding-top: 5%;
-    width: 60%;
+    width: 80%;
     margin: 5% auto;
-    font-size: 1.5em;
+    font-size: 2em;
     border-bottom: solid 2px; }
     #about-section > .about-title > h1 {
       margin: 0px auto;
@@ -249,7 +249,7 @@ h1, h2, h3, p, a, li {
         color: #3aa5c3; }
 
 #contact {
-  height: 50vh;
+  height: 75vh;
   font-family: 'Lato', sans-serif; }
 
 .modal-content > .modal-header > .modal-title {

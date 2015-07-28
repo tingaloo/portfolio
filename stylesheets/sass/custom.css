@@ -19,33 +19,29 @@ h1, h2, h3, p, a, li {
   color: white;
   background-color: transparent;
   padding-top: 5%;
-  background: #772953 -moz-linear-gradient(center top, #772953, #3aa5c3) repeat scroll 0% 0%;
-  background-image: -webkit-linear-gradient(top, #772953, #3aa5c3);
-  background-image: -moz-linear-gradient(center top, #772953, #3aa5c3);
-  background-image: -ms-linear-gradient(center top, #772953, #3aa5c3);
-  background-image: -o-linear-gradient(center top, #772953, #3aa5c3); }
+  background: #772953 -moz-linear-gradient(center top, #772953, #F0F8FF) repeat scroll 0% 0%;
+  background-image: -webkit-linear-gradient(top, #772953, #F0F8FF);
+  background-image: -moz-linear-gradient(center top, #772953, #F0F8FF);
+  background-image: -ms-linear-gradient(center top, #772953, #F0F8FF);
+  background-image: -o-linear-gradient(center top, #772953, #F0F8FF); }
   /* line 16, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
   .content h1, .content h2, .content li, .content p {
     font-family: 'Ubuntu', sans-serif; }
   /* line 33, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
-  .content > #intro-name {
-    font-size: 4em;
-    margin: 3% auto; }
-  /* line 38, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
   .content #avatar {
     border-radius: 25%;
     height: 20vh;
     margin-top: 10%;
     background-color: rgba(255, 255, 255, 0.5); }
-  /* line 44, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
+  /* line 39, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
   .content .home-text {
     text-align: left; }
     @media only screen and (max-width: 768) {
-      /* line 44, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
+      /* line 39, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
       .content .home-text {
         text-align: center;
         color: green; } }
-  /* line 52, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
+  /* line 47, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
   .content .hello-box {
     width: 100%;
     font-size: 2em;
@@ -53,8 +49,12 @@ h1, h2, h3, p, a, li {
     display: inline-block;
     position: relative;
     font-family: 'ubuntu', sans-serif; }
-    /* line 61, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
-    .content .hello-box > #hello:before {
+    @media (max-width: 768px) {
+      /* line 47, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
+      .content .hello-box {
+        font-size: 1.5em; } }
+    /* line 60, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
+    .content .hello-box > .hello:before {
       content: '';
       position: absolute;
       width: 100%;
@@ -66,21 +66,33 @@ h1, h2, h3, p, a, li {
       transform: scaleX(0);
       -webkit-transition: -webkit-transform .4s ease-in;
       transition: .4s ease-in; }
-    /* line 76, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
+    /* line 75, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
     .content .hello-box > .underline:before {
       -webkit-transform: scaleX(1) !important;
       -ms-transform: scaleX(1) !important;
       transform: scaleX(1) !important; }
-  /* line 84, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
+  /* line 83, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
   .content .intro {
     display: none; }
-    /* line 86, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
-    .content .intro > p {
+    /* line 85, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
+    .content .intro > div > p {
       font-size: 1.5em; }
-  /* line 93, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
+      @media (max-width: 768px) {
+        /* line 85, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
+        .content .intro > div > p {
+          font-size: 1em; } }
+  /* line 95, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
   .content .intro-buttons > a {
-    color: white;
-    padding-right: 4%; }
+    color: #772953;
+    padding-right: 4%;
+    -webkit-transition: color 500ms ease-in-out;
+    -moz-transition: color 500ms ease-in-out;
+    -o-transition: color 500ms ease-in-out;
+    -ms-transition: color 500ms ease-in-out;
+    transition: color 500ms ease-in-out; }
+    /* line 105, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_home.scss */
+    .content .intro-buttons > a:hover {
+      color: white; }
 
 /* line 1, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_landing-page.scss */
 #myCanvas {
@@ -179,31 +191,53 @@ h1, h2, h3, p, a, li {
   margin-top: 5px; }
 
 /* line 1, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
-#project-section {
-  height: 100vh; }
-  /* line 7, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
-  #project-section h1, #project-section h2 {
+.project-section {
+  background-color: #F0F8FF;
+  padding-bottom: 5%; }
+  /* line 6, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
+  .project-section h1, .project-section h2 {
     font-family: 'Ubuntu', sans-serif; }
 
-/* line 30, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
-.project-header {
-  font-size: 2em;
-  padding-top: 3%;
-  width: 60%;
-  margin: 5% auto;
-  border-bottom: solid 2px; }
-  /* line 37, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
-  .project-header > h1 {
-    margin: 0px auto;
-    text-align: center;
-    text-transform: uppercase; }
+/* line 13, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
+.projects-header {
+  width: 100%;
+  font-size: 3em;
+  padding: 3% 0%;
+  margin: 3% auto;
+  display: inline-block;
+  position: relative;
+  font-family: 'ubuntu', sans-serif; }
+  /* line 23, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
+  .projects-header > .projects-header-text:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 0px;
+    border-bottom: 2px solid black;
+    bottom: 2px;
+    left: 25%;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: -webkit-transform 1s ease-in;
+    transition: 1s ease-in; }
+  /* line 39, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
+  .projects-header > .highlight:before {
+    -webkit-transform: scaleX(1) !important;
+    -ms-transform: scaleX(1) !important;
+    transform: scaleX(1) !important; }
 
-/* line 45, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
+/* line 46, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
+.project-card {
+  display: inline-block; }
+
+/* line 50, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
 .project-pic {
   max-height: 350px;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 2%;
   overflow: hidden;
   opacity: 1;
   transition: opacity .25s ease-in-out;
@@ -213,20 +247,34 @@ h1, h2, h3, p, a, li {
   -moz-transition: margin 0.5s ease-in-out;
   -o-transition: margin 0.5s ease-in-out; }
   @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px) {
-    /* line 45, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
+    /* line 50, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
     .project-pic {
-      max-height: 300px; } }
-  /* line 75, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
+      max-height: 250px;
+      margin-bottom: 20%; } }
+  /* line 83, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
   .project-pic:hover {
-    margin-top: 5px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     cursor: pointer; }
 
-/* line 83, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
+/* line 90, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
+.project-caption {
+  position: absolute;
+  background-color: white;
+  text-align: left;
+  padding: 5% 5%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 99, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
+  .project-caption > .project-name {
+    font-size: 2em;
+    font-family: 'Ubuntu', sans-serif; }
+
+/* line 106, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
 .project-description {
   display: inline-block;
   width: 100%; }
-  /* line 87, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
+  /* line 110, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
   .project-description > p {
     display: inline-block;
     padding: 2% 10%;
@@ -234,57 +282,66 @@ h1, h2, h3, p, a, li {
     margin: auto;
     color: black; }
 
-/* line 97, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
+/* line 120, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
 .project-text {
   position: absolute;
   width: 75%;
   top: 100%;
   background-color: red; }
 
-/* line 107, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
+/* line 130, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
 .project-title {
   width: 80%;
   text-align: center;
   border-bottom: 2px solid #9c27b0;
   margin: 5px auto; }
-  /* line 114, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
+  /* line 137, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_projects.scss */
   .project-title > h2 {
     text-align: left; }
 
 /* line 1, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
 #about-section {
   background: #3aa5c3;
+  background: #772953 -moz-linear-gradient(center top, #F0F8FF, #3aa5c3) repeat scroll 0% 0%;
+  background-image: -webkit-linear-gradient(top, #F0F8FF, #3aa5c3);
+  background-image: -moz-linear-gradient(center top, #F0F8FF, #3aa5c3);
+  background-image: -ms-linear-gradient(center top, #F0F8FF, #3aa5c3);
+  background-image: -o-linear-gradient(center top, #F0F8FF, #3aa5c3);
   height: 100vh;
-  color: white; }
-  /* line 8, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
+  color: black; }
+  /* line 14, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
   #about-section h1 {
     font-family: 'Ubuntu', sans-serif; }
-  /* line 11, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
-  #about-section > .about-title {
+  /* line 17, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
+  #about-section #about-title {
     padding: 2%;
     padding-top: 5%;
     width: 80%;
     margin: 5% auto;
     font-size: 2em;
     border-bottom: solid 2px; }
-    /* line 18, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
-    #about-section > .about-title > h1 {
+    /* line 24, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
+    #about-section #about-title > h1 {
       margin: 0px auto;
       text-align: center;
       text-transform: uppercase; }
-  /* line 24, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
-  #about-section .about-block {
+  /* line 30, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
+  #about-section #about-block {
     padding: 0px 10%;
-    font-size: 1em; }
-    /* line 27, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
-    #about-section .about-block > p {
+    font-size: 1.5em; }
+    @media (max-width: 768px) {
+      /* line 30, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
+      #about-section #about-block {
+        font-size: 1em; } }
+    /* line 37, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
+    #about-section #about-block > p {
       text-align: left;
       margin: 5% 0%; }
-  /* line 33, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
-  #about-section #resume-link {
+  /* line 43, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
+  #about-section #contact-link {
     margin: 10%; }
-    /* line 35, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
-    #about-section #resume-link > a {
+    /* line 45, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
+    #about-section #contact-link > a {
       color: white;
       border: 2px solid white;
       padding: 1.25rem 3rem 1.15rem;
@@ -296,29 +353,59 @@ h1, h2, h3, p, a, li {
       -o-transition: background-color 500ms ease-in-out;
       -ms-transition: background-color 500ms ease-in-out;
       transition: background-color 500ms ease-in-out; }
-      /* line 54, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
-      #about-section #resume-link > a:hover {
+      /* line 59, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
+      #about-section #contact-link > a:hover {
         background-color: white;
-        color: #3aa5c3; }
+        color: #3aa5c3;
+        cursor: pointer; }
 
-/* line 1, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_contact.scss */
-#contact {
-  height: 75vh;
-  font-family: 'Lato', sans-serif; }
+/* line 68, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
+.about-header {
+  width: 100%;
+  font-size: 3em;
+  padding: 3% 0%;
+  margin: 3% auto;
+  display: inline-block;
+  position: relative;
+  font-family: 'ubuntu', sans-serif;
+  text-transform: uppercase; }
+  /* line 79, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
+  .about-header > .about-header-text:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 0px;
+    border-bottom: 2px solid black;
+    bottom: 2px;
+    left: 25%;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: -webkit-transform 1s ease-in;
+    transition: 1s ease-in; }
+  /* line 96, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_about.scss */
+  .about-header > .underline:before {
+    -webkit-transform: scaleX(1) !important;
+    -ms-transform: scaleX(1) !important;
+    transform: scaleX(1) !important; }
 
 /* line 4, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
 .modal-content > .modal-header > .modal-title {
   font-family: 'Ubuntu', sans-serif; }
 /* line 9, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
 .modal-content > .modal-body > img {
-  max-height: 400px; }
+  max-height: 300px; }
 /* line 12, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
 .modal-content > .modal-body > .summary {
   text-align: left;
   line-height: 2em;
   margin-top: 2%;
   padding: 0px 5%; }
-/* line 20, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
+/* line 19, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
+.modal-content > .modal-body > .stack {
+  color: #CCC;
+  margin-top: 5%; }
+/* line 25, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
 .modal-content > .modal-body > .project-links > a {
   display: inline-block;
   color: #9c27b0;
@@ -333,29 +420,29 @@ h1, h2, h3, p, a, li {
   -o-transition: background-color 500ms ease-in-out;
   -ms-transition: background-color 500ms ease-in-out;
   transition: background-color 500ms ease-in-out; }
-  /* line 38, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
+  /* line 43, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
   .modal-content > .modal-body > .project-links > a:active {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2); }
-  /* line 42, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
+  /* line 47, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
   .modal-content > .modal-body > .project-links > a:hover {
     background-color: #9c27b0;
     color: white; }
 
-/* line 53, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
+/* line 58, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
 .mobile-pic {
   position: absolute;
   left: 5%;
   top: 0;
   height: 150px; }
 
-/* line 60, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
+/* line 65, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
 .desktop-pic {
   max-height: 200px; }
 
-/* line 64, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
+/* line 69, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
 .vert-pic {
   max-height: 300px; }
 
-/* line 68, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
+/* line 73, /Users/tingaloo/middleman/portfolio-two/source/stylesheets/sass/_modals.scss */
 .tablet-pic {
   max-height: 175px; }
